@@ -55,7 +55,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-btn btn" type="button">Order Service</button>
+          <button class="hero-btn btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <section class="about">
@@ -236,7 +236,6 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-item">
               <img src="./images/main-page/team-4.jpg" alt="Daniel Wilson" width="264" />
               <div class="team-person">
@@ -370,5 +369,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/main-page/close-btn.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>
